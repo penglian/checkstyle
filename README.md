@@ -61,14 +61,14 @@ def getChangeFiles() {
 }
 
 4（可选）在commit代码前进行代码检查，gradle依照上面的配置，只要在项目目录中的.git\hooks目录下，新建一个pre.commit文件，贴入以下代码即可
-#!/bin/sh
-#
-# An example hook script to verify what is about to be committed.
-# Called by "git commit" with no arguments.  The hook should
-# exit with non-zero status after issuing an appropriate message if
-# it wants to stop the commit.
-#
-# To enable this hook, rename this file to "pre-commit".
+\#!/bin/sh
+\#
+\# An example hook script to verify what is about to be committed.
+\# Called by "git commit" with no arguments.  The hook should
+\# exit with non-zero status after issuing an appropriate message if
+\# it wants to stop the commit.
+\#
+\# To enable this hook, rename this file to "pre-commit".
 
 if git rev-parse --verify HEAD >/dev/null 2>&1
 then
