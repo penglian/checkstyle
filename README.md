@@ -61,6 +61,7 @@ def getChangeFiles() {
 }
 
 4（可选）在commit代码前进行代码检查，gradle依照上面的配置，只要在项目目录中的.git\hooks目录下，新建一个pre.commit文件，贴入以下代码即可
+
 \#!/bin/sh
 \#
 \# An example hook script to verify what is about to be committed.
