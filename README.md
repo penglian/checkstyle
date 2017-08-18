@@ -8,6 +8,7 @@
   然后对其稍加改造成适合自己的编码规则，在androidStudio上配置上checkstyle.xml，就可以在checkstyle上进行代码检查了
   
   3（可选）、可以在项目编译运行前进行代码检查，在app的gradle中加入以下的代码，然后在配置启动项Edit Configurations，在before launch中添加这个task即可
+  
    task checkstyle(type: Checkstyle) {
     source 'src/main/java'
 //    include '**/*.java'
@@ -59,6 +60,7 @@ def getChangeFiles() {
         return ""
     }
 }
+
 
 4（可选）在commit代码前进行代码检查，gradle依照上面的配置，只要在项目目录中的.git\hooks目录下，新建一个pre.commit文件，贴入以下代码即可
 
